@@ -11,10 +11,15 @@ env:
 
 rules:
     #ERRORS
-    strict: [2, "never"]
+    strict: [2, "never"]  # disable "use strict" rules
 
     # DISABLE
     eol-last: 2
     no-unused-vars: [2, args: none]
-    quotes: [2, single, avoid-escape]
+    quotes: [2, single, avoid-escape]  # allow single quotes for strings
     no-multi-spaces: 2
+
+    # DISABLE (personal styles)
+    no-underscore-dangle: 0  # private/internal variables
+    no-use-before-define: 0
+    no-empty: 0  # allow empty blocks e.g. try catch
