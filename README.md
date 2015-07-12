@@ -1,10 +1,10 @@
 # Mac OSX Developer Environment Setup
 This is my Mac OSX Developer Environment setup and a number of software packages
-that I use. :)
+that I use :)
 
 ## Applications
 I use `iTerm + vim` for most of my work and `Atom` editor when working with
-many files and Javascript frontend work. :)
+many files and Javascript frontend work :)
 
 ### iTerm
 - [Themes](http://iterm2colorschemes.com) (Solarized Darcula Higher Contrast)
@@ -16,6 +16,7 @@ many files and Javascript frontend work. :)
 
 ### Brew
 - [Install](http://brew.sh) `brew`.
+
     ```bash
     brew cmake
     brew macvim
@@ -27,6 +28,7 @@ many files and Javascript frontend work. :)
 
 ### npm
 - Install `npm` with `brew` and `nvm`.
+
     ```bash
     which node
     which npm
@@ -38,6 +40,7 @@ many files and Javascript frontend work. :)
     ```
 
 - Packages:
+
     ```bash
     npm install -g bower
     npm install -g grunt-cli
@@ -49,7 +52,8 @@ many files and Javascript frontend work. :)
     ```
 
 ### Atom
-- [Install](https://atom.io)
+- [Install](https://atom.io).
+
     ```bash
     apm install vim-mode
     apm install linter
@@ -76,6 +80,7 @@ many files and Javascript frontend work. :)
 - [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
 - Install vundle plugins (run `:PluginInstall`) in `vim`.
 - [Install](https://github.com/Valloric/YouCompleteMe)`valloric/youcompleteme` plugin.
+
     ```bash
     brew install cmake
     ln -s /usr/local/bin/mvim vim  # symlink macvim
