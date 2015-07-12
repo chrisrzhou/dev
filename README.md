@@ -1,10 +1,10 @@
 # Mac OSX Developer Environment Setup
 This is my Mac OSX Developer Environment setup and a number of software packages
-that I use :)
+that I use. :)
 
 ## Applications
 I use `iTerm + vim` for most of my work and `Atom` editor when working with
-many files and Javascript frontend work :)
+many files and Javascript frontend work. :)
 
 ### iTerm
 - [Themes](http://iterm2colorschemes.com) (Solarized Darcula Higher Contrast)
@@ -15,7 +15,7 @@ many files and Javascript frontend work :)
 - [Update](http://www.prioritized.net/blog/upgrading-vim-on-os-x/) `macvim`
 
 ### Brew
-- [Install](http://brew.sh) `brew`
+- [Install](http://brew.sh) `brew`.
     ```bash
     brew cmake
     brew macvim
@@ -24,9 +24,9 @@ many files and Javascript frontend work :)
     brew nvm
     brew tmux
     ```
-### npm
-- Install `npm` with `brew` and `nvm`
 
+### npm
+- Install `npm` with `brew` and `nvm`.
     ```bash
     which node
     which npm
@@ -36,8 +36,8 @@ many files and Javascript frontend work :)
     source ($brew --prefix nvm)/nvm.sh
     echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
     ```
-- Packages:
 
+- Packages:
     ```bash
     npm install -g bower
     npm install -g grunt-cli
@@ -50,7 +50,6 @@ many files and Javascript frontend work :)
 
 ### Atom
 - [Install](https://atom.io)
-
     ```bash
     apm install vim-mode
     apm install linter
@@ -68,25 +67,24 @@ many files and Javascript frontend work :)
 
 
 ## Configs
-### [.profile](.profile)
-- `bash` vanity configurations
-- Set `vim` as default editor
-- Set `PATHS` (`ruby`, `rvm`, `python`)
+### [.profile](configs/.profile)
+- `bash` vanity configurations.
+- Set `vim` as default editor.
+- Set `PATHS` (`ruby`, `rvm`, `python`).
 
-### [.vimrc](.vimrc)
-- [Install](https://github.com/gmarik/Vundle.vim) `vundle`
-- Install vundle plugins (run `:PluginInstall`) in `vim`
-- [Install](https://github.com/Valloric/YouCompleteMe)`valloric/youcompleteme` plugin
+### [.vimrc](configs/.vimrc)
+- [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
+- Install vundle plugins (run `:PluginInstall`) in `vim`.
+- [Install](https://github.com/Valloric/YouCompleteMe)`valloric/youcompleteme` plugin.
+    ```bash
+    brew install cmake
+    ln -s /usr/local/bin/mvim vim  # symlink macvim
+    cd ~/.vim/bundle/YouCompleteMe
+    ./install.sh
+    ```
 
-        ```bash
-        brew install cmake
-        ln -s /usr/local/bin/mvim vim  # symlink macvim
-        cd ~/.vim/bundle/YouCompleteMe
-        ./install.sh
-        ```
-
-### [.atom](.atom)
+### [.atom](configs/.atom)
 - `atom.config` for Atom packages.
 
-### [.eslintrc](.eslintrc)
-- `eslint` rules (mainly to support ECMAScript and JSX.
+### [.eslintrc](configs/.eslintrc)
+- `eslint` rules (mainly to support ECMAScript and JSX).

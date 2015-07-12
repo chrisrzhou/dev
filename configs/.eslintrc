@@ -1,0 +1,20 @@
+# https://github.com/facebook/react/blob/master/.eslintrc
+# npm install eslint babel-eslint eslint-plugin-react --save-dev
+
+parser: babel-eslint
+plugins:
+    - react
+
+env:
+    browser: true
+    node: true
+
+rules:
+    #ERRORS
+    strict: [2, "never"]
+
+    # DISABLE
+    eol-last: 2
+    no-unused-vars: [2, args: none]
+    quotes: [2, single, avoid-escape]
+    no-multi-spaces: 2
