@@ -1,5 +1,5 @@
 # https://github.com/facebook/react/blob/master/.eslintrc
-# npm install eslint babel-eslint eslint-plugin-react --save-dev
+# npm install -g eslint babel-eslint eslint-plugin-react
 
 parser: babel-eslint
 plugins:
