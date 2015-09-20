@@ -1,33 +1,55 @@
 # Mac OSX Developer Environment Setup
-This is my Mac OSX Developer Environment setup and a number of software packages
+This is my Mac OSX developer environment setup and a number of software packages
 that I use :)
+
 
 ## Applications
 I use `iTerm + vim` for most of my work and `Atom` editor when working with
 many files and Javascript frontend work :)
 
-### iTerm
-- [Themes](http://iterm2colorschemes.com) (Solarized Darcula Higher Contrast)
-- `12pt Consolas`
-
-### MacVim
-- Confirm `Xcode` is installed with `brew install macvim --override-system-vim`
-- [Update](http://www.prioritized.net/blog/upgrading-vim-on-os-x/) `macvim`
 
 ### Brew
-- [Install](http://brew.sh) `brew`.
+- [Install](http://brew.sh)
+- Install some packages e.g.
 
     ```bash
-    brew cmake
-    brew macvim
-    brew mercurial
-    brew node
-    brew nvm
-    brew tmux
+    brew install cmake
+    brew install mercurial
+    brew install tmux
     ```
 
-### npm
-- Install `npm` with `brew` and `nvm`.
+### iTerm
+- [Themes](http://iterm2colorschemes.com) (Solarized Darcula Higher Contrast)
+- [Install](http://blog.ikato.com/post/15675823000/how-to-install-consolas-font-on-mac-os-x) Consolas font
+
+    ```bash
+    brew install cabextract
+
+    cd ~/Downloads
+    mkdir consolas
+    cd consolas
+    curl -O http://download.microsoft.com/download/f/5/a/f5a3df76-d856-4a61-a6bd-722f52a5be26/PowerPointViewer.exe
+
+    cabextract PowerPointViewer.exe
+    cabextract ppviewer.cab
+
+    open CONSOLA*.TTF
+    # Press 'Intall font' and you are done!
+    ```
+
+### MacVim
+- [Guide](http://stackoverflow.com/questions/21012203/gvim-or-macvim-in-mac-os-x)
+- Install XCode through the App Store and open/register it after installation.
+- Then run:
+
+    ```bash
+    brew update
+    brew install vim && brew install macvim
+    brew link macvim
+    ```
+
+### Node
+- Install `node` and `npm` using `nvm`
 
     ```bash
     which node
@@ -35,11 +57,12 @@ many files and Javascript frontend work :)
     sudo npm uninstall npm-g
     brew update
     brew install nvm
-    source ($brew --prefix nvm)/nvm.sh
+
+    # add this to your .profile file using echo
     echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
     ```
 
-- Packages:
+- Install useful global packages e.g.
 
     ```bash
     npm install -g bower
@@ -53,6 +76,7 @@ many files and Javascript frontend work :)
 
 ### Atom
 - [Install](https://atom.io).
+- Install useful packages e.g.
 
     ```bash
     apm install vim-mode
@@ -69,23 +93,22 @@ many files and Javascript frontend work :)
     ```
 
 
-
 ## Configs
 ### [.profile](configs/.profile)
+- Copy this to `~`.
 - `bash` vanity configurations.
 - Set `vim` as default editor.
-- Set `PATHS` (`ruby`, `rvm`, `python`).
+- Set `PATHS` (`ruby`, `rvm`, `python`, `nvm`).
 
 ### [.vimrc](configs/.vimrc)
 - [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
-- Install vundle plugins (run `:PluginInstall`) in `vim`.
+- Install vundle plugins (run `:PluginInstall` in a `vim` session).
 - [Install](https://github.com/Valloric/YouCompleteMe)`valloric/youcompleteme` plugin.
 
     ```bash
-    brew install cmake
-    ln -s /usr/local/bin/mvim vim  # symlink macvim
-    cd ~/.vim/bundle/YouCompleteMe
-    ./install.sh
+    # Compile YCM without semantic support for C-family languages:
+    cd ~/.vim/bundle/youcompleteme
+    ./install.py
     ```
 
 ### [.atom](configs/.atom)
