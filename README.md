@@ -71,6 +71,7 @@ many files and Javascript frontend work :)
     npm install -g karma
     npm install -g webpack
     npm install -g eslint
+    npm install -g eslint-plugin-react
     npm install -g babel-eslint
     ```
 
