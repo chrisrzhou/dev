@@ -10,7 +10,7 @@ many files and Javascript frontend work :)
 
 ### Brew
 - [Install](http://brew.sh)
-- Install some packages e.g.
+- Install useful packages e.g.
 
     ```bash
     brew install cmake
@@ -49,19 +49,19 @@ many files and Javascript frontend work :)
     ```
 
 ### Node
-- Install `node` and `npm` using `nvm`
+- [Install](http://kevinallenrodriguez.com/blog/installing-configuring-node-js-npm-using-homebrew-on-os-x/) `node` with `brew`.
 
     ```bash
-    which node
-    which npm
-    sudo npm uninstall npm-g
     brew update
-    brew install nvm
+    brew doctor
+    brew prune
 
-    # add this to your .profile file using echo
-    echo "source $(brew --prefix nvm)/nvm.sh" >> ~/.profile
+    # Add these to ~/.profile (path for npm and npm packages respectively)
+    export PATH="/usr/local/bin:$PATH"
+    export PATH="$HOME/.node/bin:$PATH"
+
+    brew install node
     ```
-
 - Install useful global packages e.g.
 
     ```bash
@@ -76,7 +76,7 @@ many files and Javascript frontend work :)
     ```
 
 ### Atom
-- [Install](https://atom.io).
+- [Install Atom editor](https://atom.io).
 - Install useful packages e.g.
 
     ```bash
@@ -99,7 +99,7 @@ many files and Javascript frontend work :)
 - Copy this to `~`.
 - `bash` vanity configurations.
 - Set `vim` as default editor.
-- Set `PATHS` (`ruby`, `rvm`, `python`, `nvm`).
+- Set `PATHS` (`ruby`, `rvm`, `python`, `node`, `npm`).
 
 ### [.vimrc](configs/.vimrc)
 - [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
