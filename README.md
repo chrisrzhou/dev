@@ -35,7 +35,8 @@ This is my Mac OSX developer environment setup!
 - Use `macvim` and `vundle`.
 - `brew install macvim --with-override-system-vim`
 - [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
-- [Install](https://github.com/Valloric/YouCompleteMe)`valloric/youcompleteme`.
+- [Install](https://github.com/Valloric/YouCompleteMe) `valloric/youcompleteme`.
+- [Install](https://github.com/suan/vim-instant-markdown) `vim-instant-markdown`.
 - Install `vundle` plugins (run `:PluginInstall` in a `vim` session).
 
 
