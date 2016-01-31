@@ -1,4 +1,4 @@
-# npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-plugin-react
+// npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-plugin-react
 
 {
   "parser": "babel-eslint",
