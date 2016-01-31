@@ -1,25 +1,22 @@
-# https://github.com/facebook/react/blob/master/.eslintrc
-# npm install -g eslint babel-eslint eslint-plugin-react
+# npm install --save-dev eslint babel-eslint eslint-config-airbnb eslint-plugin-react
 
-parser: babel-eslint
-plugins:
-    - react
-
-env:
-    browser: true
-    node: true
-
-rules:
-    #ERRORS
-    strict: [2, "never"]  # disable "use strict" rules
-
-    # DISABLE
-    eol-last: 2
-    no-unused-vars: [2, args: none]
-    quotes: [2, single, avoid-escape]  # allow single quotes for strings
-    no-multi-spaces: 2
-
-    # DISABLE (personal styles)
-    no-underscore-dangle: 0  # private/internal variables
-    no-use-before-define: 0
-    no-empty: 0  # allow empty blocks e.g. try catch
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/react-in-jsx-scope": 2,
+    "no-var": 0,
+    "vars-on-top": 0,
+    "comma-dangle": 1,
+    "quotes": [2, single, avoid-escape],
+  },
+  "plugins": [
+    "react"
+  ]
+}

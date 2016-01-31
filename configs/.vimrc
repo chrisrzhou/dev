@@ -20,13 +20,14 @@ set backspace=indent,eol,start
 set autoindent
 set smarttab
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 filetype plugin indent on
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType python setlocal expandtab shiftwidth=4 tabstop=4 autoindent smarttab
+
 
 
 """"" VUNDLE SETTINGS
@@ -53,7 +54,6 @@ Plugin 'gmarik/Vundle.vim'   " required
 
 " Other plugins
 Plugin 'scrooloose/syntastic'
-Plugin 'scrooloose/nerdtree'
 Plugin 'valloric/youcompleteme'
 call vundle#end()
 
