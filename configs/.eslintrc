@@ -8,13 +8,14 @@
     "node": true
   },
   "rules": {
+    "arrow-body-style": ["error", "always"],
+    "quotes": [2, single, avoid-escape],
+    "comma-dangle": 1,
+    "no-var": 0,
     "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/react-in-jsx-scope": 2,
-    "no-var": 0,
     "vars-on-top": 0,
-    "comma-dangle": 1,
-    "quotes": [2, single, avoid-escape],
   },
   "plugins": [
     "react"
