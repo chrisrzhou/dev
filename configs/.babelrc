@@ -1,10 +1,7 @@
-// npm install --save-dev babel-preset-es2015 babel-preset-react babel-preset-stage-0 babel-reset-react-hmre
-
 {
-  "presets": ["react", "es2015", "stage-0"],
-  "env": {
-    "development": {
-      "presets": ["react-hmre"]
-    }
-  }
+  "presets": [
+    "react",
+    "es2015",
+    "stage-0",
+  ],
 }
