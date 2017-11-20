@@ -1,0 +1,16 @@
+  editor:
+    fontFamily: "Hack"
+    fontSize: 10
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      showInStatusBar: true
+    prettierEslintOptions: {}
+    prettierOptions:
+      bracketSpacing: false
+      singleQuote: true
+      trailingComma: "all"
+    useEslint: true
