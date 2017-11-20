@@ -1,9 +1,0 @@
-# tmux-like pane controls
-'atom-workspace':
-  'ctrl-b %': 'pane:split-right-and-move-active-item'
-  'ctrl-b "': 'pane:split-down-and-move-active-item'
-  'ctrl-b x': 'pane:close'
-  'ctrl-b up': 'window:focus-pane-above'
-  'ctrl-b down': 'window:focus-pane-below'
-  'ctrl-b left': 'window:focus-pane-on-left'
-  'ctrl-b right': 'window:focus-pane-on-right'

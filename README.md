@@ -2,7 +2,6 @@
 This is my Mac OSX developer environment setup!
 
 
-
 ## Mac Applications
 - [Atom](https://atom.io/)
 - [Dropbox](https://www.dropbox.com/)
@@ -16,19 +15,14 @@ This is my Mac OSX developer environment setup!
 - [XCode](https://developer.apple.com/xcode/download/)
 
 
-
 ## Brew
 - Install [brew](http://brew.sh/).
 - Common packages (`brew install`):
   - `cmake`
   - `macvim` (requires XCode)
-  - `node`
+  - `yarn`
   - `tmux`
-  - `mongodb`
-  - `mercurial`
-  - `ruby`
   - `wget`
-
 
 
 ## Vim
@@ -39,55 +33,18 @@ This is my Mac OSX developer environment setup!
 - [Install](https://github.com/suan/vim-instant-markdown) `vim-instant-markdown`.
 - Install `vundle` plugins (run `:PluginInstall` in a `vim` session).
 
-
-
-## Node/npm
-- `brew install node`
-- Avoid Global packages (`npm -g install`):
-  - `instant-markdown-d`
-- Common packages (`npm install --save`):
-  - `history`
-  - `mongodb`
-  - `react`
-  - `react-dom`
-  - `react-redux`
-  - `react-router`
-  - `redux`
-  - `redux-thunk`
-- Common dev packages (`npm install --save-dev`):
-  - `babel`
-  - `babel-cli`
-  - `babel-core`
-  - `babel-eslint`
-  - `babel-loader`
-  - `babel-preset-es2015`
-  - `eslint`
-  - `eslint-config-airbnb`
-  - `eslint-plugin-react`
-  - `express`
-  - `redux-devtools`
-  - `rimraf`
-  - `webpack`
-  - `webpack-dev-middleware`
-  - `webpack-hot-middleware`
-
-
-
 ### Atom
 - Common packages (`apm install`):
-  - `color-picker`
-  - `language-babel`
-  - `linter-eslint`
-  - `open-in-browser`
-  - `pigment`
-  - `react`
+  - `nuclide`
   - `vim-mode`
-
+  - `prettier-atom`
 
 
 ## Configs
 - [.babelrc](configs/.babelrc)
+- [.editorconfig](configs/.editorconfig)
 - [.eslintrc](configs/.eslintrc)
 - [.gitignore](configs/.gitignore)
 - [.profile](configs/.profile)
 - [.vimrc](configs/.vimrc)
+- [atom](configs/atom)
