@@ -7,3 +7,7 @@
   'ctrl-b down': 'window:focus-pane-below'
   'ctrl-b left': 'window:focus-pane-on-left'
   'ctrl-b right': 'window:focus-pane-on-right'
+  'ctrl-b shift-up': 'window:move-active-item-to-pane-above'
+  'ctrl-b shift-down': 'window:move-active-item-to-pane-below'
+  'ctrl-b shift-left': 'window:move-active-item-to-pane-on-left'
+  'ctrl-b shift-right': 'window:move-active-item-to-pane-on-right'
