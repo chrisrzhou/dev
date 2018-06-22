@@ -54,7 +54,6 @@ Plugin 'gmarik/Vundle.vim'   " required
 
 " Other plugins
 Plugin 'scrooloose/syntastic'
-Plugin 'valloric/youcompleteme'
 call vundle#end()
 
 filetype plugin indent on    " required
