@@ -7,15 +7,9 @@ node_modules
 # files and IDE
 .DS_STORE
 *~
-*.pyc
-*.sublime-project
-*.sublime-workspace
-.idea
-*.iml
-.vscode
 *.swp
 *.swo
 
 # project
-build/
-
+dist
+build

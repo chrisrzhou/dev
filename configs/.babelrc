@@ -1,8 +1,11 @@
 {
   "presets": [
-    "es2015",
-    "flow",
-    "react",
-    "stage-0",
-  ],
+    [
+      "@babel/env",
+      {
+        "loose": true
+      }
+    ],
+    "@babel/react"
+  ]
 }
