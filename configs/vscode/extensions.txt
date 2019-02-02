@@ -1,0 +1,10 @@
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+dbaeumer.vscode-eslint
+eg2.tslint
+esbenp.prettier-vscode
+geddski.macros
+ms-python.python
+msjsdiag.debugger-for-chrome
+streetsidesoftware.code-spell-checker
+vscodevim.vim

@@ -1,0 +1,24 @@
+{
+  // editor
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  // macros
+  "macros": {
+    "splitEditorOrthogonal": [
+      "workbench.action.newGroupBelow",
+      "workbench.action.focusAboveGroup",
+      "workbench.action.moveEditorToBelowGroup"
+    ],
+    "splitEditor": [
+      "workbench.action.newGroupRight",
+      "workbench.action.focusLeftGroup",
+      "workbench.action.moveEditorToRightGroup"
+    ]
+  },
+  // prettier
+  "prettier.eslintIntegration": true
+}
+

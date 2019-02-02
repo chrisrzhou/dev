@@ -1,7 +1,7 @@
 {
-  "name": "PROJECT",
+  "name": "<PROJECT>",
   "version": "0.0.1",
-  "description": "PROJECT DESCRIPTION",
+  "description": "<PROJECT_DESCRIPTION>",
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "keywords": [],
@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chrisrzhou/PROJECT.git"
+    "url": "https://github.com/chrisrzhou/<PROJECT>.git"
   },
   "bugs": {
-    "url": "https://github.com/chrisrzhou/PROJECT/issues"
+    "url": "https://github.com/chrisrzhou/<PROJECT>/issues"
   },
-  "homepage": "https://PROJECT",
+  "homepage": "https://<PROJECT_URL>",
   "scripts": {
     "prepare": "yarn clean && yarn build",
     "clean": "rm -rf dist",
