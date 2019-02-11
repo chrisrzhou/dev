@@ -1,46 +1,12 @@
-# Mac OSX Developer Environment Setup
-This is my Mac OSX developer environment setup!
+# Dev Setup
 
+- **Device**: 2016 Macbook Pro
+- **Code Editor**: VS Code
+- **CLI**: `iterm2` + `tmux` + `vim`
 
-## Mac Applications
-- [Atom](https://atom.io/)
-- [Google Chrome](https://www.google.com/chrome/)
-- [iTerm2](https://www.iterm2.com/)
-- [iTerm2 Themes](http://iterm2colorschemes.com)
-- [Spectacle](https://www.spectacleapp.com/)
-- [XCode](https://developer.apple.com/xcode/download/)
+Refer to the following folders for detailed setup:
 
-
-## Brew
-- Install [brew](http://brew.sh/).
-- Common packages (`brew install`):
-  - `cmake`
-  - `macvim` (requires XCode)
-  - `yarn`
-  - `tmux`
-  - `wget`
-
-
-## Vim
-- Use `macvim` and `vundle`.
-- `brew install macvim --with-override-system-vim`
-- [Install](https://github.com/gmarik/Vundle.vim) `vundle`.
-- [Install](https://github.com/suan/vim-instant-markdown) `vim-instant-markdown`.
-- Install `vundle` plugins (run `:PluginInstall` in a `vim` session).
-
-### Atom
-- Common packages (`apm install`):
-  - `nuclide`
-  - `vim-mode`
-  - `prettier-atom`
-
-
-## Configs
-- [.babelrc](configs/.babelrc)
-- [.editorconfig](configs/.editorconfig)
-- [.eslintrc](configs/.eslintrc)
-- [.gitignore](configs/.gitignore)
-- [.profile](configs/.profile)
-- [.vimrc](configs/.vimrc)
-- [atom](configs/atom)
-etc
+- [atom](./atom)
+- [github](./github)
+- [mac](./mac)
+- [vscode](./vscode)
