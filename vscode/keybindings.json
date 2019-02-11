@@ -19,85 +19,54 @@
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+b shift+'",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+b shift+5",
-    "command": "workbench.action.terminal.split",
-    "when": "terminalFocus"
-  },
-  {
-    // "key": "cmd+b left",
-    "command": "workbench.action.terminal.focusPreviousPane",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+b right",
-    "command": "workbench.action.terminal.focusNextPane",
-    "when": "terminalFocus"
-  },
-  {
-    "key": "cmd+b up",
+    "key": "cmd+up",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+b down",
+    "key": "cmd+down",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
-  // editor
+  // editor tmux controls
   {
-    "key": "cmd+b shift+'",
-    "command": "macros.splitEditorOrthogonal",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+'",
+    "command": "macros.splitEditorOrthogonal"
   },
   {
-    "key": "cmd+b shift+5",
-    "command": "macros.splitEditor",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+5",
+    "command": "macros.splitEditor"
   },
   {
-    "key": "cmd+b left",
-    "command": "workbench.action.focusLeftGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b left",
+    "command": "workbench.action.focusLeftGroup"
   },
   {
-    "key": "cmd+b right",
-    "command": "workbench.action.focusRightGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b right",
+    "command": "workbench.action.focusRightGroup"
   },
   {
-    "key": "cmd+b up",
-    "command": "workbench.action.focusAboveGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b up",
+    "command": "workbench.action.focusAboveGroup"
   },
   {
-    "key": "cmd+b down",
-    "command": "workbench.action.focusBelowGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b down",
+    "command": "workbench.action.focusBelowGroup"
   },
   {
-    "key": "cmd+b shift+left",
-    "command": "workbench.action.moveEditorToLeftGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+left",
+    "command": "workbench.action.moveEditorToLeftGroup"
   },
   {
-    "key": "cmd+b shift+right",
-    "command": "workbench.action.moveEditorToRightGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+right",
+    "command": "workbench.action.moveEditorToRightGroup"
   },
   {
-    "key": "cmd+b shift+up",
-    "command": "workbench.action.moveEditorToAboveGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+up",
+    "command": "workbench.action.moveEditorToAboveGroup"
   },
   {
-    "key": "cmd+b shift+down",
-    "command": "workbench.action.moveEditorToBelowGroup",
-    "when": "editorTextFocus"
+    "key": "ctrl+b shift+down",
+    "command": "workbench.action.moveEditorToBelowGroup"
   }
 ]
-
