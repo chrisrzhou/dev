@@ -1,25 +1,32 @@
 import babel from 'rollup-plugin-babel';
-import typescript from 'rollup-plugin-typescript';
+import typescript from 'rollup-plugin-typescript2';
+
+import pkg from './package.json';
 
 export default [
   {
+    input: 'src/index.tsx',
     plugins: [
+      typescript({
+        clean: true,
+      }),
       babel({
         exclude: 'node_modules/**',
       }),
-      typescript(),
     ],
-    input: 'src/index.tsx',
-    external: ['react'],
     output: [
       {
-        file: 'dist/index.js',
+        exports: 'named',
+        file: pkg.main,
         format: 'cjs',
       },
       {
-        file: 'dist/index.module.js',
+        file: pkg.module,
         format: 'esm',
       },
+    ],
+    external: [
+      'react',
     ],
   },
 ];

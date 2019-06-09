@@ -1,6 +1,8 @@
 {
   // editor
   "editor.tabSize": 2,
+  "editor.wordWrap": "bounded",
+  "editor.wordWrapColumn": 80,
   // macros
   "macros": {
     "splitEditorOrthogonal": [
@@ -41,5 +43,10 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": false
-  }
+  },
+  "importSorter.generalConfiguration.sortOnBeforeSave": true,
+  "cSpell.userWords": ["polyfill", "wordcloud"],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "window.zoomLevel": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

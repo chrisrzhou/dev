@@ -1,10 +1,13 @@
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
-eg2.tslint
 esbenp.prettier-vscode
 geddski.macros
+mike-co.import-sorter
 ms-python.python
+ms-vscode.vscode-typescript-tslint-plugin
 msjsdiag.debugger-for-chrome
-streetsidesoftware.code-spell-checker
+robinbentley.sass-indented
+shinnn.stylelint
+silvenon.mdx
 vscodevim.vim

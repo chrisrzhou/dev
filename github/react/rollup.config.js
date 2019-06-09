@@ -1,24 +1,28 @@
 import babel from 'rollup-plugin-babel';
 
+import pkg from './package.json';
+
 export default [
   {
+    input: 'src/index.js',
     plugins: [
       babel({
-        extensions: ['.js', '.jsx'],
         exclude: 'node_modules/**',
       }),
     ],
-    input: 'src/index.js',
-    external: ['react'],
     output: [
       {
-        file: 'dist/index.js',
+        exports: 'named',
+        file: pkg.main,
         format: 'cjs',
       },
       {
-        file: 'dist/index.module.js',
+        file: pkg.module,
         format: 'esm',
       },
+    ],
+    external: [
+      'react',
     ],
   },
 ];
