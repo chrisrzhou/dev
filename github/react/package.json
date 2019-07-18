@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.module.js",
   "keywords": [],
-  "author": "Chris Zhou <christopher.r.zhou@gmail.com> (https://github.com/chrisrzhou)",
+  "author": "Chris Zhou <chrisrzhou@pm.me> (https://github.com/chrisrzhou)",
   "license": "MIT",
   "repository": {
     "type": "git",

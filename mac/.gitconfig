@@ -1,0 +1,10 @@
+[user]
+	name = chrisrzhou
+	email = chrisrzhou@pm.me
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[alias]
+    graph = log --graph --all --date=short --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %Cgreen %aN, %ad%Creset'
