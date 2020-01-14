@@ -11,8 +11,15 @@ module.exports = {
     'react-hooks',
   ],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    "prettier/prettier": [
+      "warn",
+      {
+        singleQuote: true,
+        trailingComma: "all"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   settings: {
     react: {

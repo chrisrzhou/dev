@@ -3,10 +3,10 @@ christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
 esbenp.prettier-vscode
 geddski.macros
+janisdd.vscode-edit-csv
 mike-co.import-sorter
 ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
-msjsdiag.debugger-for-chrome
 robinbentley.sass-indented
 shinnn.stylelint
 silvenon.mdx

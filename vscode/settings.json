@@ -16,8 +16,6 @@
       "workbench.action.moveEditorToRightGroup"
     ]
   },
-  // lint and formatting
-  "prettier.eslintIntegration": true,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     "javascript",
@@ -33,7 +31,8 @@
   ],
   "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.formatOnSave": false
@@ -42,11 +41,18 @@
     "editor.formatOnSave": false
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "cSpell.userWords": ["polyfill", "wordcloud"],
+  "importSorter.importStringConfiguration.trailingComma": "multiLine",
+  "importSorter.importStringConfiguration.tabSize": 2,
+  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimit",
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "window.zoomLevel": 1,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "terminal.integrated.rendererType": "dom"
 }

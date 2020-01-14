@@ -5,7 +5,7 @@
 - [Brew](http://brew.sh/)
 - [iTerm](https://www.iterm2.com/)
 - [Spectacle](https://www.spectacleapp.com/)
-- [Google Chrome](https://www.google.com/chrome/)
+- [Firefox Developer Edition](https://www.mozilla.org/en-US/firefox/developer/)
 - [VS Code](https://code.visualstudio.com/)
 
 ## CLI

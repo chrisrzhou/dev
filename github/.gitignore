@@ -1,14 +1,10 @@
-# node
-node_modules
-
-# logs
-*.log*
-
-# files and IDE
+# temp files
 .DS_STORE
+*.log*
 *~
 *.swp
 *.swo
 
 # project
-dist
+.env
+node_modules

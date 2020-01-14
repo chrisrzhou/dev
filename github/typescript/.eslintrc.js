@@ -1,31 +1,43 @@
 module.exports = {
   extends: [
-    'plugin:prettier/recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/@typescript-eslint"
   ],
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     }
   },
-  plugins: [
-    '@typescript-eslint',
-    'prettier',
-    'react-hooks',
-  ],
+  plugins: ["@typescript-eslint", "prettier", "react-hooks"],
   rules: {
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        argsIgnorePattern: "^_",
+        ignoreRestSiblings: true
+      }
+    ],
+    "prettier/prettier": [
+      "warn",
+      {
+        singleQuote: true,
+        trailingComma: "all"
+      }
+    ],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   },
   settings: {
     react: {
-      version: 'detect',
-    },
-  },
+      version: "detect"
+    }
+  }
 };

@@ -6,7 +6,6 @@
 
 Refer to the following folders for detailed setup:
 
-- [atom](./atom)
 - [github](./github)
 - [mac](./mac)
 - [vscode](./vscode)

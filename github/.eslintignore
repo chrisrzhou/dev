@@ -1,6 +1,3 @@
-# Third party
-**/node_modules
-
-# Build
-build/
-dist/
+.cache
+node_modules
+public
