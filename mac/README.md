@@ -15,13 +15,9 @@ Install the following CLI tools using `brew`
 - `yarn`
 - `tmux`
 - `cmake`
+- `git-completion`
 
 ## Terminal
 
-- [Install iTerm](https://www.iterm2.com/)
-- Copy [iTerm preferences](com.googlecode.iterm2.plist) to a local folder and apply them under `"iTerm > Preferences > Load preference from custom folder or URL"`
-- Install `macvim`
-  ```bash
-  brew install macvim --with-override-system-vim
-  ```
+- [Install iTerm](https://www.iterm2.com/) with minimal theme
 - [Install `vundle`](https://github.com/gmarik/Vundle.vim) and plugins (run `:PluginInstall` in a `vim` session)
