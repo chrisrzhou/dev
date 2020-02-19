@@ -15,7 +15,11 @@ Install the following CLI tools using `brew`
 - `yarn`
 - `tmux`
 - `cmake`
-- `git-completion`
+
+## Set up `git-completion`
+```bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -o ~/.git-completion.zsh
+```
 
 ## Terminal
 
