@@ -11,5 +11,10 @@ PROMPT="%~ "
 bindkey -v
 bindkey '^R' history-incremental-search-backward
 
-## git bash auto-complete
-source ~/.git-completion.zsh
+# git bash auto-complete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# aliases
+alias g=git

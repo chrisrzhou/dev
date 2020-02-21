@@ -1,4 +1,5 @@
 # Mac
+Copy various config files to `~` and complete the setup below.
 
 ## Applications
 
@@ -18,7 +19,7 @@ Install the following CLI tools using `brew`
 
 ## Set up `git-completion`
 ```bash
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh -o ~/.git-completion.zsh
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 ```
 
 ## Terminal
