@@ -1,10 +1,17 @@
 [user]
-	name = chrisrzhou
-	email = chrisrzhou@pm.me
+  name = chrisrzhou
+  email = chrisrzhou@pm.me
 [filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+  clean = git-lfs clean -- %f
 [alias]
-    graph = log --graph --all --date=short --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %Cgreen %aN, %ad%Creset'
+  b = !git branch
+  c = !git add -A && git commit -m
+  co = !git checkout
+  f = !git fetch
+  l = log --graph --all --date=short --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %Cgreen %aN, %ad%Creset'
+  m = !git merge
+  n = !git checkout -b
+  p = !git push origin $(git rev-parse --abbrev-ref HEAD)
