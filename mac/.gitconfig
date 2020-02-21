@@ -15,3 +15,4 @@
   m = !git merge
   n = !git checkout -b
   p = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  s = !git status
