@@ -1,10 +1,8 @@
-# dev
-
-My dev setup
+# Dev Setup
 
 - **Device**: 2016 Macbook Pro
-- **Editor**: VS Code
-- **Shell**: `iterm2` + `tmux` + `vim`
+- **Code Editor**: VS Code
+- **CLI**: `iterm2` + `tmux` + `vim`
 
 Refer to the following folders for detailed setup:
 
