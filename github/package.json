@@ -1,0 +1,48 @@
+{
+	"name": "PROJECT",
+	"version": "0.1.0",
+	"description": "",
+	"main": "dist/index.js",
+	"module": "dist/index.module.js",
+	"types": "src/index.d.ts",
+	"keywords": [],
+	"author": "Chris Zhou <chrisrzhou@pm.me>",
+	"license": "MIT",
+	"repository": "https://github.com/chrisrzhou/PROJECT.git",
+	"bugs": "https://github.com/chrisrzhou/PROJECT/issues",
+	"homepage": "https://PROJECT.netlify.com/",
+	"scripts": {
+    "build": "echo",
+		"lint": "xo --fix; tsc",
+		"prepare": "yarn build"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-config-xo-typescript": "^0.26.0",
+		"husky": "^4.2.3",
+		"typescript": "^3.8.3",
+		"xo": "^0.27.2"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "yarn lint && yarn build"
+		}
+	},
+	"prettier": {
+		"bracketSpacing": true,
+		"jsxBracketSameLine": true,
+		"trailingComma": "all"
+	},
+	"xo": {
+		"prettier": true,
+		"extends": [
+			"xo-react"
+		],
+		"rules": {
+			"import/no-unassigned-import": "off",
+			"react/function-component-definition": "off",
+			"react/prop-types": "off"
+		}
+	}
+}

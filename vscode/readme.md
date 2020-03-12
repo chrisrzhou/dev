@@ -1,7 +1,7 @@
-# VS Code Setup
+# VS Code
 
 - [Install VS Code](https://code.visualstudio.com/)
-- Install extensions
+- Install extensions from this folder after initializing shell in VSCode.
   ```bash
   cat extensions.txt | xargs -L1 code --install-extension
   ```

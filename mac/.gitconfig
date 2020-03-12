@@ -1,18 +1,25 @@
 [user]
   name = chrisrzhou
   email = chrisrzhou@pm.me
+
 [filter "lfs"]
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
   clean = git-lfs clean -- %f
+
 [alias]
   b = !git branch
   c = !git add -A && git commit -m
   co = !git checkout
+  co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+  d = !git diff
   f = !git fetch
   l = log --graph --all --date=short --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %Cgreen %aN, %ad%Creset'
   m = !git merge
   n = !git checkout -b
   p = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  pl = !git pull
+  r = !git reset --hard HEAD
   s = !git status
+  st = !git stash

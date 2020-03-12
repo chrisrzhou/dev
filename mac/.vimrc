@@ -51,8 +51,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'   " required
-
-" Other plugins
+Plugin 'editorconfig/editorconfig-vim'
 Plugin 'scrooloose/syntastic'
 call vundle#end()
 

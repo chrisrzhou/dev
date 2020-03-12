@@ -1,13 +1,13 @@
 christian-kohler.npm-intellisense
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
+EditorConfig.EditorConfig
 esbenp.prettier-vscode
 geddski.macros
 janisdd.vscode-edit-csv
-mike-co.import-sorter
 ms-python.python
 ms-vscode.vscode-typescript-tslint-plugin
-robinbentley.sass-indented
+samverschueren.linter-xo
 shinnn.stylelint
 silvenon.mdx
 vscodevim.vim

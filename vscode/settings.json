@@ -1,9 +1,4 @@
 {
-  // editor
-  "editor.tabSize": 2,
-  "editor.wordWrap": "bounded",
-  "editor.wordWrapColumn": 80,
-  // macros
   "macros": {
     "splitEditorOrthogonal": [
       "workbench.action.newGroupBelow",
@@ -16,43 +11,9 @@
       "workbench.action.moveEditorToRightGroup"
     ]
   },
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    {
-      "language": "typescript",
-      "autoFix": true
-    },
-    {
-      "language": "typescriptreact",
-      "autoFix": true
-    }
-  ],
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": false
-  },
-  "[typescript]": {
-    "editor.formatOnSave": false
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "importSorter.generalConfiguration.sortOnBeforeSave": true,
-  "importSorter.importStringConfiguration.trailingComma": "multiLine",
-  "importSorter.importStringConfiguration.tabSize": 2,
-  "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimit",
-  "typescript.updateImportsOnFileMove.enabled": "always",
+  "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.osx": "zsh",
   "window.zoomLevel": 1,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "terminal.integrated.rendererType": "dom"
+  "xo.enable": true,
+  "xo.format.enable": true
 }
