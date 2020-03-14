@@ -1,4 +1,7 @@
 {
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "same",
+  "editor.wordWrapColumn": 80,
   "macros": {
     "splitEditorOrthogonal": [
       "workbench.action.newGroupBelow",
@@ -15,5 +18,7 @@
   "terminal.integrated.shell.osx": "zsh",
   "window.zoomLevel": 1,
   "xo.enable": true,
-  "xo.format.enable": true
+  "xo.format.enable": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always"
 }
