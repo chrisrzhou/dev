@@ -1,4 +1,5 @@
 # Mac
+
 Copy various config files to `~` and complete the setup below.
 
 ## Applications
