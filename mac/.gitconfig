@@ -10,16 +10,19 @@
 
 [alias]
   b = !git branch
-  c = !git add -A && git commit -m
+  bda = !git branch | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | xargs git branch -D
+  c = !git commit
   co = !git checkout
-  co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+  cp = !git cherry-pick
   d = !git diff
   f = !git fetch
   l = log --graph --all --date=short --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %Cgreen %aN, %ad%Creset'
   m = !git merge
   n = !git checkout -b
   p = !git push origin $(git rev-parse --abbrev-ref HEAD)
+  pf = !git push origin HEAD --force
   pl = !git pull
-  r = !git reset --hard HEAD
+  rb = !git rebase -i
   s = !git status
   st = !git stash
+  sta = !git stash apply
