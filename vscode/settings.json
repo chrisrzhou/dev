@@ -1,7 +1,11 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "editor.wordWrap": "wordWrapColumn",
   "editor.wrappingIndent": "same",
   "editor.wordWrapColumn": 80,
+  "javascript.updateImportsOnFileMove.enabled": "always",
   "macros": {
     "splitEditorOrthogonal": [
       "workbench.action.newGroupBelow",
@@ -14,11 +18,7 @@
       "workbench.action.moveEditorToRightGroup"
     ]
   },
-  "terminal.integrated.rendererType": "dom",
-  "terminal.integrated.shell.osx": "zsh",
-  "window.zoomLevel": 1,
-  "xo.enable": true,
-  "xo.format.enable": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always"
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.tsdk": "./node_modules/typescript/lib",
+  "typescript.updateImportsOnFileMove.enabled": "always",
 }
