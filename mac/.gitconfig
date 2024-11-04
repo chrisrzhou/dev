@@ -11,7 +11,8 @@
 [alias]
   b = !git branch
   bda = !git branch | grep -v \"$(git rev-parse --abbrev-ref HEAD)\" | xargs git branch -D
-  c = !git commit
+  c = !git commit -m
+  ca = !git commit --amend
   co = !git checkout
   cp = !git cherry-pick
   d = !git diff
