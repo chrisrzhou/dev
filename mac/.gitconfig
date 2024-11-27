@@ -23,6 +23,7 @@
   p = !git push origin $(git rev-parse --abbrev-ref HEAD)
   pf = !git push origin HEAD --force
   pl = !git pull
+  r = !git reset --hard HEAD
   rb = !git rebase -i
   s = !git status
   st = !git stash
